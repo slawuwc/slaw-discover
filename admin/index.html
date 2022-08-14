@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLAW Discover JSON Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="container py-3">
+    <h1 class="text-center">SLAW Discover JSON Tool</h1>
+
+    <div class="mb-3">
+        <label for="activityFile" class="form-label">Import from <code>activities.json</code></label>
+        <input class="form-control" type="file" accept="application/json" id="activityFile">
+    </div>
+
+    <div class="mb-3">
+        <label for="activityList" class="form-label">Paste activity list (one per line)</label>
+        <textarea class="form-control" id="activityList" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary mb-3" id="activityListBtn">Import</button>
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Grade</th>
+                <th>Timing</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="activityTable">
+            <tr>
+                <td><input type="text" class="form-control activity-name" id="name1" aria-label="Name 1" /></td>
+                <td><textarea type="text" class="form-control activity-description" id="description1"
+                        aria-label="Description 1" rows="1"></textarea></td>
+                <td><input type="image" class="form-control-sm grade-btn" src="img/edit.svg" id="grade1"
+                        aria-label="Edit grade" /></td>
+                <td><input type="image" class="form-control-sm timing-btn" src="img/edit.svg" id="timing1"
+                        aria-label="Edit timing" /></td>
+                <td><input type="image" class="form-control-sm tags-btn" src="img/edit.svg" id="tags1"
+                        aria-label="Edit tags" /></td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary activity-add">+</button>
+                        <button type="button" class="btn btn-outline-primary activity-remove" disabled>-</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" id="download">Download as JSON</button>
+
+    <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit <span id="editProperty"></span> for "<span
+                            id="editName"></span>"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="editContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="editSave" data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

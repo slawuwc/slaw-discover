@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <title>SLAW Discover</title>
+
+    <!-- <link rel="stylesheet" href="css/slideform.css"> -->
+    <link rel="stylesheet" href="css/slideform.min.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <div id="slaw-notice">
+        <a href="https://www.slawuwc.org/">Return to SLAW Website</a>
+    </div>
+    <form>
+        <div class="slideform-slide">
+            <div class="slideform-group">
+                <h1>SLAW Discover</h1>
+                <p>Welcome to SLAW Discover! Answer a few questions to help us determine the activities that match your
+                    interest.</p>
+            </div>
+        </div>
+
+        <div class="slideform-slide">
+            <div class="slideform-group">
+                <h2>Which grade are you in?</h2>
+                <div class="options options-list">
+                    <label for=""><input type="radio" name="grade" value="1" required><span>Grade 8 and
+                            below</span></label>
+                    <label for=""><input type="radio" name="grade" value="2"><span>Grade 9</span></label>
+                    <label for=""><input type="radio" name="grade" value="4"><span>Grade 10</span></label>
+                    <label for=""><input type="radio" name="grade" value="8"><span>Grade 11</span></label>
+                    <label for=""><input type="radio" name="grade" value="16"><span>Grade 12</span></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideform-slide">
+            <div class="slideform-group">
+                <h2>When are you usually available?</h2>
+                <p>You can select multiple.</p>
+                <div class="options options-buttons">
+                    <table>
+                        <tr>
+                            <td><label for=""><input type="checkbox" name="timing" value="1" required>
+                                    <span>Monday Lunch (First)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="2" required>
+                                    <span>Monday Lunch (Second)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="4">
+                                    <span>Monday After School</span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><label for=""><input type="checkbox" name="timing" value="8">
+                                    <span>Tuesday Lunch (First)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="16">
+                                    <span>Tuesday Lunch (Second)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="32">
+                                    <span>Tuesday After School</span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><label for=""><input type="checkbox" name="timing" value="64">
+                                    <span>Wednesday Lunch (First)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="128">
+                                    <span>Wednesday Lunch (Second)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="256">
+                                    <span>Wednesday After School</span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><label for=""><input type="checkbox" name="timing" value="512">
+                                    <span>Thursday Lunch (First)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="1024">
+                                    <span>Thursday Lunch (Second)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="2048">
+                                    <span>Thursday After School</span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td><label for=""><input type="checkbox" name="timing" value="4096">
+                                    <span>Friday Lunch (First)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="8192">
+                                    <span>Friday Lunch (Second)</span>
+                                </label></td>
+                            <td><label for=""><input type="checkbox" name="timing" value="16384">
+                                    <span>Friday After School</span>
+                                </label></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideform-slide">
+            <div class="slideform-group">
+                <h2>Choose some things that interest you...</h2>
+                <p>If you don't see a suitable category, select "Others".</p>
+                <div class="options options-buttons">
+                    <label for=""><input type="checkbox" name="tags" value="arts" required><span>The
+                            Arts</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="stem"><span>STEM</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="econs"><span>Economics &
+                            Finance</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="literature"><span>Literature</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="history"><span>History</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="chinese"><span>Chinese</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="publications"><span>Magazines & Publications</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="entertainment"><span>Entertainment</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="leadership"><span>Leadership</span></label>
+                    <label for=""><input type="checkbox" name="tags" value="others"><span>Others</span></label>
+                </div>
+                <div data-condition="input.tags && (input.tags === 'arts' || input.tags.includes('arts'))"
+                    data-condition-false="$(this).find('input').prop('checked', false)">
+                    <h3>The Arts</h3>
+                    <div class="options options-buttons">
+                        <label for=""><input type="checkbox" name="tags" value="visual-art"><span>Visual
+                                Art</span></label>
+                        <label for=""><input type="checkbox" name="tags" value="music"><span>Music</span></label>
+                        <label for=""><input type="checkbox" name="tags"
+                                value="photography"><span>Photography</span></label>
+                        <label for=""><input type="checkbox" name="tags" value="other-arts"><span>Other
+                                Arts</span></label>
+                    </div>
+                </div>
+                <div data-condition="input.tags && (input.tags === 'stem' || input.tags.includes('stem'))"
+                    data-condition-false="$(this).find('input').prop('checked', false)">
+                    <h3>STEM</h3>
+                    <div class="options options-buttons">
+                        <label for=""><input type="checkbox" name="tags" value="science"><span>Natural
+                                Sciences</span></label>
+                        <label for=""><input type="checkbox" name="tags" value="coding"><span>Coding, Programming & Technology</span></label>
+                        <label for=""><input type="checkbox" name="tags"
+                                value="engineering"><span>Engineering</span></label>
+                        <label for=""><input type="checkbox" name="tags" value="math"><span>Math</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideform-slide">
+            <div class="slideform-group results-slide">
+                <h2>Results</h2>
+                <p>Based on your selection, we recommend these activities. Click on an activity to view more details.</p>
+                <p>Couldn't find anything interesting?
+                    <a href="https://www.slawuwc.org/activities">View all activities</a>
+                </p>
+                <div id="discover-results"></div>
+            </div>
+        </div>
+
+        <footer class="slideform-footer">
+            <div class="slideform-progress-bar">
+                <span></span>
+            </div>
+
+            <div class="buttons">
+                <button class="slideform-btn slideform-btn-next" aria-label="Next"><i
+                        class="icon-chevron-down"></i></button>
+                <button class="slideform-btn slideform-btn-prev" aria-label="Previous"><i
+                        class="icon-chevron-up"></i></button>
+            </div>
+        </footer>
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <!-- <script src="js/slideform.js"></script> -->
+    <script src="js/slideform.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
