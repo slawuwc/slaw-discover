@@ -28,7 +28,7 @@
 
 <body>
     <div id="slaw-notice">
-        <a href="https://www.slawuwc.org/">Return to SLAW Website</a>
+        <a href="https://slawuwc.org/">Return to SLAW Website</a>
     </div>
     <form>
         <div class="slideform-slide">
@@ -59,7 +59,7 @@
                 <h2>When are you usually available?</h2>
                 <p>You can select multiple.</p>
                 <div class="options options-buttons">
-                    <table>
+                    <table id="timing-table">
                         <tr>
                             <td><label for=""><input type="checkbox" name="timing" value="1" required>
                                     <span>Monday Lunch (First)</span>
@@ -70,6 +70,9 @@
                             <td><label for=""><input type="checkbox" name="timing" value="4">
                                     <span>Monday After School</span>
                                 </label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="table-separator"></td>
                         </tr>
                         <tr>
                             <td><label for=""><input type="checkbox" name="timing" value="8">
@@ -83,6 +86,9 @@
                                 </label></td>
                         </tr>
                         <tr>
+                            <td colspan="3" class="table-separator"></td>
+                        </tr>
+                        <tr>
                             <td><label for=""><input type="checkbox" name="timing" value="64">
                                     <span>Wednesday Lunch (First)</span>
                                 </label></td>
@@ -94,6 +100,9 @@
                                 </label></td>
                         </tr>
                         <tr>
+                            <td colspan="3" class="table-separator"></td>
+                        </tr>
+                        <tr>
                             <td><label for=""><input type="checkbox" name="timing" value="512">
                                     <span>Thursday Lunch (First)</span>
                                 </label></td>
@@ -103,6 +112,9 @@
                             <td><label for=""><input type="checkbox" name="timing" value="2048">
                                     <span>Thursday After School</span>
                                 </label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="table-separator"></td>
                         </tr>
                         <tr>
                             <td><label for=""><input type="checkbox" name="timing" value="4096">
@@ -170,12 +182,12 @@
         </div>
 
         <div class="slideform-slide">
-            <div class="slideform-group results-slide">
+            <div id="results-slide" class="slideform-group">
                 <h2>Results</h2>
                 <p>Based on your selection, we recommend these activities. Click on an activity to view more details.
                 </p>
                 <p>Couldn't find anything interesting?
-                    <a href="https://www.slawuwc.org/activities">View all activities</a>
+                    <a href="https://slawuwc.org/activities">View all activities</a>
                 </p>
                 <div id="discover-results"></div>
             </div>

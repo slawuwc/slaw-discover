@@ -217,24 +217,36 @@ button {
     height: 5em;
 }
 
-form.slideform-form .options-buttons table {
+#timing-table {
     width: 100%;
     table-layout: fixed;
     border-spacing: 15px 0;
     border-collapse: separate;
 }
 
-form.slideform-form .options-buttons table label {
+#timing-table label {
     width: 100%;
+    margin: 0;
 }
 
-form.slideform-form .options-buttons table input[type=checkbox]+span,
-form.slideform-form .options-buttons table input[type=radio]+span {
+#timing-table input+span {
     width: 100%;
     box-sizing: border-box;
 }
 
-form.slideform-form .slideform-group.results-slide {
+.table-separator {
+    height: 15px;
+}
+
+.table-separator:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1px;
+    background: #bdbdbd;
+}
+
+#results-slide {
     max-width: 80%;
 }
 
