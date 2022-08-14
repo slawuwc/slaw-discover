@@ -217,24 +217,33 @@ button {
     height: 5em;
 }
 
-form.slideform-form .options-buttons table {
+#timing-table {
     width: 100%;
-    table-layout: fixed;
-    border-spacing: 15px 0;
-    border-collapse: separate;
+    border-collapse: collapse;
+    text-align: center;
 }
 
-form.slideform-form .options-buttons table label {
-    width: 100%;
+#timing-table th,
+#timing-table td {
+    padding: .5em;
 }
 
-form.slideform-form .options-buttons table input[type=checkbox]+span,
-form.slideform-form .options-buttons table input[type=radio]+span {
-    width: 100%;
-    box-sizing: border-box;
+#timing-table thead tr,
+#timing-table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #bdbdbd;
 }
 
-form.slideform-form .slideform-group.results-slide {
+#timing-table th:not(:last-child),
+#timing-table td:not(:last-child) {
+    border-right: 1px solid #bdbdbd;
+}
+
+#timing-table tbody th {
+    text-align: right;
+    padding-right: 1em;
+}
+
+#results-slide {
     max-width: 80%;
 }
 
@@ -267,6 +276,14 @@ form.slideform-form .slideform-group.results-slide {
     align-items: center;
     flex-direction: column;
     color: #757575;
+}
+
+#discover-results.no-results h3 {
+    margin: 1em 0;
+}
+
+#discover-results.no-results p {
+    margin: 0 0 .5em 0;
 }
 
 @media screen and (max-width: 767px) {
