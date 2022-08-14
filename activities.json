@@ -1,0 +1,234 @@
+[
+    {
+        "name": "CCReW",
+        "description": "The activity focuses on teaching students Python, learning how to use the Terminal and command line, as well as mastering the use of Github and Git, a development platform most professionals use to collaborate on coding projects with.",
+        "grade": 1,
+        "timing": 4,
+        "tags": [
+            "stem",
+            "coding"
+        ]
+    },
+    {
+        "name": "Chinese Magazine",
+        "description": "Chinese Magazine is an activity in which students gather news and activity material, translate it, then paraphrase it in Chinese in order to assist students or families who are unfamiliar with or confident in using English.",
+        "grade": 30,
+        "timing": 256,
+        "tags": [
+            "chinese",
+            "publications"
+        ]
+    },
+    {
+        "name": "Chinese Mahjong Club",
+        "description": "Chinese Mahjong club is an activity where students not only have the opportunity to learn how to play mahjong but are also able to gain exposure to Chinese culture and communicate in Mandarin.",
+        "grade": 15,
+        "timing": 256,
+        "tags": [
+            "chinese",
+            "entertainment"
+        ]
+    },
+    {
+        "name": "Chinese Poetry Club",
+        "description": "Poetry is a way of life. Whether it’s about perceiving nature to discover its profound philosophy or gazing at the starry night to contemplate the ways of this vast universe, every stroke we write and every hymn we read echo through our minds in cohesion.",
+        "grade": 30,
+        "timing": 32,
+        "tags": [
+            "literature",
+            "history",
+            "chinese"
+        ]
+    },
+    {
+        "name": "Engineering Society",
+        "description": "Engineering Society is for those who have an interest in any form of engineering and physics.",
+        "grade": 30,
+        "timing": 512,
+        "tags": [
+            "stem",
+            "engineering"
+        ]
+    },
+    {
+        "name": "Epiphany",
+        "description": "Epiphany is a platform for all artists within the UWCSEA community.",
+        "grade": 30,
+        "timing": 32767,
+        "tags": [
+            "arts",
+            "visual-art",
+            "music",
+            "photography",
+            "other-arts"
+        ]
+    },
+    {
+        "name": "Finance Society",
+        "description": "A brief introduction to the fundamentals of finance, emphasizing their application to a wide variety of real-world situations spanning personal finance, corporate decision-making, and financial intermediation.",
+        "grade": 30,
+        "timing": 64,
+        "tags": [
+            "econs"
+        ]
+    },
+    {
+        "name": "Games Creation Club",
+        "description": "In this activity, students learn the basics of C++ and how to use it to create fun, interactive and exciting games!",
+        "grade": 31,
+        "timing": 32,
+        "tags": [
+            "stem",
+            "coding"
+        ]
+    },
+    {
+        "name": "Girls in Tech",
+        "description": "Girls in Tech is an activity where we prepare our annual all girls hackathon, SHEHACKS, and explore different aspects of technology and coding languages.",
+        "grade": 30,
+        "timing": 8,
+        "tags": [
+            "stem",
+            "leadership",
+            "coding"
+        ]
+    },
+    {
+        "name": "History Society",
+        "description": "History Society is a student led activity where members can pick and discuss a range of topics from South East Asian history to US civil rights, as well as working collaboratively on projects such as the audio-digital history map of Singapore or individually on family-history activities.",
+        "grade": 30,
+        "timing": 64,
+        "tags": [
+            "history"
+        ]
+    },
+    {
+        "name": "Interscol",
+        "description": "Interscol is the annual yearbook produced by students at UWCSEA Dover that connects the UWC Dover Middle and High School community together.",
+        "grade": 14,
+        "timing": 32767,
+        "tags": [
+            "publications"
+        ]
+    },
+    {
+        "name": "Investment Society",
+        "description": "The Investment Society has been set up by students who have a strong interest in investing and finance.",
+        "grade": 30,
+        "timing": 8,
+        "tags": [
+            "econs"
+        ]
+    },
+    {
+        "name": "Marine Biology Society",
+        "description": "Marine Biology Society is a group of students dedicated to learning more about oceans, ecological issues relating to them, and the organisms that reside in them.",
+        "grade": 30,
+        "timing": 128,
+        "tags": [
+            "stem",
+            "science"
+        ]
+    },
+    {
+        "name": "Money Matters",
+        "description": "Money Matters is the school's principal economic/business journal.",
+        "grade": 30,
+        "timing": 2,
+        "tags": [
+            "econs",
+            "publications"
+        ]
+    },
+    {
+        "name": "Nurture Bilingual Magazine",
+        "description": "This is a Chinese culture and history oriented magazine/picture books in both English and Chinese and entirely student-led.",
+        "grade": 31,
+        "timing": 32767,
+        "tags": [
+            "chinese",
+            "publications"
+        ]
+    },
+    {
+        "name": "Psych Society",
+        "description": "Everyone with an interest in finding out more about Psychology is welcome to join PsychSoc.",
+        "grade": 30,
+        "timing": 128,
+        "tags": [
+            "stem",
+            "science"
+        ]
+    },
+    {
+        "name": "Quiz Bowl",
+        "description": "Quiz bowl is a fast-paced buzzer competition in which teams of four players compete to answer questions that cover academic subjects like literature and science as well as the broader world of popular culture and current events.",
+        "grade": 30,
+        "timing": 32,
+        "tags": [
+            "stem",
+            "literature",
+            "history",
+            "others",
+            "science",
+            "math"
+        ]
+    },
+    {
+        "name": "Science Committee",
+        "description": "The purpose of the Science Committee is to produce a platform for students who love science.",
+        "grade": 30,
+        "timing": 1,
+        "tags": [
+            "stem",
+            "leadership",
+            "science"
+        ]
+    },
+    {
+        "name": "SLAW Insiders",
+        "description": "SLAW Insiders is the team behind the maintenance of the SLAW website!",
+        "grade": 30,
+        "timing": 32,
+        "tags": [
+            "stem",
+            "leadership",
+            "others",
+            "coding"
+        ]
+    },
+    {
+        "name": "Solar for Dover",
+        "description": "We are the premier organisation on the Dover campus pushing the solar movement to all students at UWCSEA.",
+        "grade": 30,
+        "timing": 1024,
+        "tags": [
+            "stem",
+            "leadership",
+            "others",
+            "science",
+            "engineering"
+        ]
+    },
+    {
+        "name": "Sudoku",
+        "description": "We solve difficult sudoku puzzles together and learn about interesting techniques when solving those puzzles.",
+        "grade": 30,
+        "timing": 512,
+        "tags": [
+            "stem",
+            "entertainment",
+            "math"
+        ]
+    },
+    {
+        "name": "Vision Plan Society",
+        "description": "This club focuses on managing and spending time efficiently on both works for academics and works for your dream visions!",
+        "grade": 30,
+        "timing": 1024,
+        "tags": [
+            "leadership",
+            "others"
+        ]
+    }
+]
