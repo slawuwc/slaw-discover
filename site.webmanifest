@@ -1,0 +1,19 @@
+{
+    "name": "SLAW Discover",
+    "short_name": "SLAW Discover",
+    "icons": [
+        {
+            "src": "/assets/images/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#004c97",
+    "background_color": "#004c97",
+    "display": "standalone"
+}
