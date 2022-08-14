@@ -61,7 +61,7 @@ $form.slideform({
         const activities = await $.getJSON("activities.min.json");
         activities.forEach((activity) => {
             const intersectTags = activity.tags.filter((tag) => formData.tags.includes(tag));
-            if (!activity.grade & formData.grade || !activity.timing & formData.timing || !intersectTags.length) {
+            if (!(activity.grade & formData.grade) || !(activity.timing & formData.timing) || !intersectTags.length) {
                 return;
             }
             const $div = $("<div>").addClass("activity-card");
@@ -73,12 +73,12 @@ $form.slideform({
                 $("<p>").text(`Tags: ${intersectTags.join(", ")}`),
             );
             $div.on("click", () => {
-                window.open(`https://www.slawuwc.org/activities/${toSlug(activity.name)}`);
+                window.open(`https://slawuwc.org/activities/${toSlug(activity.name)}`);
             });
             $res.append($div);
         });
         if (!$res.children().length) {
-            $res.addClass("no-results").append("<h3>No results :(</h3><p>Try again with looser constraints?</p>");
+            $res.addClass("no-results").append("<h3>Oh no! :(</h3><p>We didn't find anything.</p><p>Perhaps try again with looser constraints?</p>");
         }
         $form.find(".slideform-btn-next, .slideform-btn-submit").prop("disabled", false);
         $form.trigger("goForward");
