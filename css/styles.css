@@ -213,6 +213,10 @@ button {
     color: #494949;
 }
 
+#slaw-logo {
+    height: 5em;
+}
+
 form.slideform-form .options-buttons table {
     width: 100%;
     table-layout: fixed;
